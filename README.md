@@ -4,7 +4,7 @@ Created with python, it has console mode and graphical mode
 
 ## Authors
 
-- [@LUISEDOCCOR](https://github.com/LUISEDOCCOR)
+- [@LUISEDOCCOR](https://github.com/LUISEDOCCOR/apppyv-2)
 
 
 ## Documentation

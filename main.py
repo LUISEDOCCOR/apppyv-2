@@ -59,10 +59,14 @@ def console(): #modo consola
         for i in range(x): 
             clearConsole() #limpiamos consola
             print(f'Activity Num: {i+1}') #printamos el numero de actividad que es 
-            title = input('Title: ')  #preguntamos la data por agregar
+            title = input(f'Title Default: [Act] ')#preguntamos la data por agregar
+            if title == '':
+                title = 'Activity: '
             act = input('Activity: ') #preguntamos la data por agregar
             cursor.execute('INSERT INTO ToDoList (title, act) VALUES (?,?)', (title, act)) #insertamos en nuestra base de dattos esta infromación
-        conexion.commit() #Guardamos todos lo cambios en ella 
+        conexion.commit()
+        clearConsole()
+        see()#Guardamos todos lo cambios en ella 
     elif option == 2:
         option = True
         while option:
@@ -116,3 +120,5 @@ while option != 1 and option != 2 and option != 3:
     option = int(input('Which option do you choose: '))
     clearConsole()
     call(option)
+
+ 
