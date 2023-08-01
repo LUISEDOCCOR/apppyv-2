@@ -1,0 +1,8 @@
+colorama 
+sqlite3
+pyfiglet
+sys
+plataform
+tkinter
+time 
+webbrowser
