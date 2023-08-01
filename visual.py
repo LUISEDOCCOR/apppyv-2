@@ -57,4 +57,3 @@ def vs():
     tk.Button(root, text='Add', justify='center', font=('Arial', 12), command=insert).pack(pady=5)
     root.mainloop()
 
-conexion.close()
